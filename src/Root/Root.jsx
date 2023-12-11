@@ -4,7 +4,7 @@ import Nav from "../Shared/Nav";
 
 const Root = () => {
     return (
-        <div className="container mx-auto">
+        <div className="">
             <Nav />
             <Outlet />
             <Footer />

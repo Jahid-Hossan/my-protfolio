@@ -32,8 +32,7 @@ const Nav = () => {
 
 
     return (
-
-        <section className='sticky bg-[#0b0b2b] top-0 z-10  '>
+        <section className='sticky bg-[#252734] top-0 z-10  '>
             <nav className='flex container mx-auto  px-5 top-0 lg:flex-row justify-between items-center'>
                 <h2 className="text-white text-2xl font-semibold">Jahid</h2>
                 <div className='-order-1 lg:order-none'>
