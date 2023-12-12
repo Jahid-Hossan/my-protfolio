@@ -21,7 +21,7 @@ const Nav = () => {
 
                 <div className='py-2'>
                     <div className='py-2'>
-                        <button className=''><NavLink className='px-4 text-white hover:bg-white hover:text-black  font-medium  hover:duration-500 border-[1px] rounded-full py-2' to="/login"  >Hire Me <MdOutlineKeyboardDoubleArrowRight className="inline" /> </NavLink></button>
+                        <button className=''><NavLink className='px-4 text-white hover:bg-white hover:text-black  font-medium  hover:duration-500 border-[1px] rounded-full py-2' to=""  >Hire Me <MdOutlineKeyboardDoubleArrowRight className="inline" /> </NavLink></button>
                     </div>
                 </div>
 
