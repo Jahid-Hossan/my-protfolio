@@ -23,7 +23,7 @@ const Projects = () => {
                         <div>
                             <p className="text-justify ">Restaurant system with a membership system with different packages allows users to upgrade for additional benefits. also, there is an individual dashboard for user and admin.</p>
                         </div>
-                        <div className="  space-x-2  text-xs mt-2 ">
+                        <div className="  space-x-2  text-xs  mt-2 ">
                             <span className="p-1.5 bg-slate-700 rounded-md">React</span>
                             <span className="p-1.5 bg-slate-700 rounded-md">JavaScript</span>
                             <span className="p-1.5 bg-slate-700 rounded-md">Mongodb</span>
@@ -61,11 +61,10 @@ const Projects = () => {
                             <p className="text-gray-300">Event Management website</p>
                         </div>
                         <p className="text-justify">The website features detailed event service information. Clients can securely create accounts with email and password authentication. The site is responsive across devices, ensuring a positive user experience. </p>
-                        <div className="space-x-2 text-xs mt-2 ">
+                        <div className="space-x-1  lg:space-x-2 text-sm  mt-2 ">
                             <span className="p-1.5 bg-slate-700 rounded-md">HTML</span>
                             <span className="p-1.5 bg-slate-700 rounded-md">React</span>
                             <span className="p-1.5 bg-slate-700 rounded-md">JavaScript</span>
-                            <span className="p-1.5 bg-slate-700 rounded-md">Mongodb</span>
                             <span className="p-1.5 bg-slate-700 rounded-md">Tailwind Css</span>
                         </div>
                     </div>
