@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'carmo': 'Cormorant Garamond'
+      'carmo': 'Cormorant Garamond',
+      'styledFont': 'Lobster'
     },
     extend: {},
 

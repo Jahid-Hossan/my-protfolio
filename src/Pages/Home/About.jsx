@@ -7,7 +7,7 @@ const About = () => {
                 <Heading heading={"About"} ></Heading>
             </div>
             <div className="text-center ">
-                <p className=" w-3/5 text-center mx-auto text-gray-300">
+                <p className="p-2 lg:w-3/5 text-center mx-auto text-gray-300">
                     I am a passionate Front-end Developer with a knack for creating intuitive and
                     high-performing web applications. Passionate about creating visually
                     appealing and user-friendly interfaces that enhance the user experience.
@@ -16,7 +16,7 @@ const About = () => {
 
                 </p>
             </div>
-            <div className="mt-8 pb-16 flex justify-around gap-5">
+            <div className="mt-8 pb-16 lg:flex justify-around space-y-5 gap-5">
                 <div className=" flex justify-center flex-col items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                         <circle cx="31" cy="31" r="31" fill="#252734" />

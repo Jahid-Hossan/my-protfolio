@@ -9,14 +9,14 @@ const Banner = () => {
     const encodedFilename = encodeURIComponent("Resume-of-Jahid-Hossan.pdf");
 
     return (
-        <div className="flex  justify-center items-center">
-            <div className="text-white w-1/2  flex justify-center">
-                <div>
-                    <h2 className="text-6xl font-bold font-carmo">Hello! I'm</h2>
-                    <h1 className="text-8xl font-bold font-carmo mt-7">Jahid Hossan</h1>
-                    <p className="text-gray-400 text-lg mt-9">Front-end Web Developer</p>
+        <div className="  lg:flex  justify-center items-center">
+            <div className="text-white lg:w-1/2  flex justify-center">
+                <div className="mt-4">
+                    <h2 className="text-3xl lg:text-6xl font-bold font-carmo">Hello! I'm</h2>
+                    <h1 className="text-5xl lg:text-8xl font-bold font-carmo lg:mt-7">Jahid Hossan</h1>
+                    <p className="text-gray-400 text-lg mt-4 lg:mt-9">Front-end Web Developer</p>
                     <p className="text-gray-400 text-lg ">
-                        with a very good knowledge in <TypeAnimation
+                        with a very good knowledge in <br className="lg:hidden" /> <TypeAnimation
                             sequence={[
 
                                 // Same substring at the start will only be typed once, initially
@@ -40,14 +40,14 @@ const Banner = () => {
                         />
                     </p>
                     {/* download="Resume of Jahid Hossan" */}
-                    <button className='mt-9'><a
+                    <button className='py-9'><a
                         href={resume}
                         download={encodedFilename}
                         className='px-4  text-[#27AE60] hover:bg-[#333648]  border-[#333648]   hover:duration-500 border-[2px] rounded-full py-4' to="/login"  >Get Resume <TbDownload className="inline" /> </a></button>
 
                 </div>
             </div>
-            <div className="w-1/2 ">
+            <div className="w-1/2 hidden lg:block">
                 <img src={img} alt="" className="w-2/3" />
             </div>
         </div>

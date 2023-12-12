@@ -22,14 +22,14 @@ const Contact = () => {
             <div className="pt-8">
                 <Heading heading={"Get in touch"} ></Heading>
             </div>
-            <div className="lg:w-2/3 mx-auto">
+            <div className="lg:w-2/3 mx-auto p-4">
                 <form onSubmit={handleFormSubmit} className="space-y-12 text-gray-300">
                     <div className="flex gap-6">
                         <div className="w-full">
-                            <input placeholder="name" name="name" type="text" className="w-full  border-b-[2px] p-3 bg-[#2a2c39] outline-none " />
+                            <input placeholder="name" name="name" type="text" className="w-full  border-b-[2px] py-3 bg-[#2a2c39] outline-none " />
                         </div>
                         <div className="w-full">
-                            <input placeholder="email" name="email" type="email" className="w-full bg-[#2a2c39] border-b-[2px] p-3 outline-none " />
+                            <input placeholder="email" name="email" type="email" className="w-full bg-[#2a2c39] border-b-[2px] py-3 outline-none " />
                         </div>
                     </div>
                     <div>

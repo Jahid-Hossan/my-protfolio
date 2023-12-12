@@ -9,24 +9,7 @@ const Nav = () => {
     const [open, setOpen] = useState(true);
 
     const menus = <>
-        <li className='' >
-            <NavLink
-                className={({ isActive }) =>
-                    ` ${isActive ? "active" : ""} hover:bg-white hover:text-black hover:duration-500`
-                }
-                to="/" >Home
-            </NavLink>
-        </li>
 
-        <li className='' >
-            <NavLink
-                className={({ isActive }) =>
-                    ` ${isActive ? "active" : ""} hover:bg-white hover:text-black hover:duration-500`
-                }
-                to="/" >
-                Projects
-            </NavLink>
-        </li>
 
     </>
 
@@ -34,22 +17,7 @@ const Nav = () => {
     return (
         <section className='sticky bg-[#252734] top-0 z-10  '>
             <nav className='flex container mx-auto  px-5 top-0 lg:flex-row justify-between items-center'>
-                <h2 className="text-white text-2xl font-semibold">Jahid</h2>
-                <div className='-order-1 lg:order-none'>
-                    <div>
-                        <button onClick={() => setOpen(!open)} className='text-xl lg:hidden'>{
-                            open === true ? <ImMenu></ImMenu> : <ImCross></ImCross>
-                        }
-                        </button>
-                    </div>
-                    <ul className={`absolute  lg:gap-12 text-lg  p-5 lg:flex lg:justify-center rounded-lg lg:static duration-300 ${open ? "-left-60" : "left-2"} lg:flex lg:justify-center`}>
-
-                        {menus}
-
-                    </ul>
-
-                </div>
-
+                <h2 className="text-white text-2xl font-styledFont ">Jahid Hossan</h2>
 
                 <div className='py-2'>
                     <div className='py-2'>
