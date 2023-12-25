@@ -9,7 +9,7 @@ const Skills = () => {
             <div className="pt-8">
                 <Heading heading={"Skills"} ></Heading>
             </div>
-            <div className="flex pb-16">
+            <div className="flex lg:pb-16">
                 <div className="grid grid-cols-1 mx-auto lg:grid-cols-4 gap-4 ">
                     <Skill title={'HTML'} value={90} />
                     <Skill title={'CSS'} value={85} />

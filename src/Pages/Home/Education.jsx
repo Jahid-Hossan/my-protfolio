@@ -2,7 +2,7 @@ import Heading from "../../Component/Heading";
 
 const Education = () => {
     return (
-        <div className="pb-16">
+        <div className="lg:pb-16">
             <div className="pt-8 ">
                 <Heading heading={"Education"} ></Heading>
             </div>

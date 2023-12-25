@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import img from "../../assets/portfulio.png"
 import { TbDownload } from "react-icons/tb";
-import { resume } from "../../Component/Resume";
+
 
 const Banner = () => {
 
@@ -9,7 +9,7 @@ const Banner = () => {
     const encodedFilename = encodeURIComponent("Resume-of-Jahid-Hossan.pdf");
 
     return (
-        <div className="  lg:flex  justify-center items-center">
+        <div className="  flex flex-col lg:flex-row  justify-center items-center">
             <div className="text-white lg:w-1/2  flex justify-center">
                 <div className="mt-4">
                     <h2 className="text-3xl lg:text-6xl font-bold font-carmo">Hello! I'm</h2>
@@ -41,14 +41,14 @@ const Banner = () => {
                     </p>
                     {/* download="Resume of Jahid Hossan" */}
                     <button className='py-9'><a
-                        href={resume}
+                        href='/public/Resume of Jahid Hossan (frontend) (1).pdf'
                         download={encodedFilename}
                         className='px-4  text-[#27AE60] hover:bg-[#333648]  border-[#333648]   hover:duration-500 border-[2px] rounded-full py-4' to="/login"  >Get Resume <TbDownload className="inline" /> </a></button>
 
                 </div>
             </div>
-            <div className="w-1/2 hidden lg:block">
-                <img src={img} alt="" className="w-2/3" />
+            <div className="lg:w-1/2 order-first lg:order-none ">
+                <img src={img} alt="" className="lg:w-2/3" />
             </div>
         </div>
     );
