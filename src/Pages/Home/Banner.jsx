@@ -1,6 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import img from "../../assets/portfulio.png"
 import { TbDownload } from "react-icons/tb";
+import resume from '../../../public/Resume of Jahid Hossan (frontend) (1).pdf'
 
 
 const Banner = () => {
@@ -41,7 +42,7 @@ const Banner = () => {
                     </p>
                     {/* download="Resume of Jahid Hossan" */}
                     <button className='py-9'><a
-                        href='/public/Resume of Jahid Hossan (frontend) (1).pdf'
+                        href={resume}
                         download={encodedFilename}
                         className='px-4  text-[#27AE60] hover:bg-[#333648]  border-[#333648]   hover:duration-500 border-[2px] rounded-full py-4' to="/login"  >Get Resume <TbDownload className="inline" /> </a></button>
 
