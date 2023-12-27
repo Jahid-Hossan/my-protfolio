@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import Heading from "../../Component/Heading";
+import emailjs from '@emailjs/browser';
+import toast from "react-hot-toast";
+
 
 
 const Contact = () => {
+    useEffect(() => emailjs.init(import.meta.env.VITE_EMAIL_JS_API_PUBLIC_KEY), []);
+
+    console.log(import.meta.env.VITE_EMAIL_JS_SERVICE_ID);
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -11,10 +18,35 @@ const Contact = () => {
         const email = form.email.value;
         const massage = form.massage.value;
 
-        console.log(name, email, massage)
 
 
+        try {
+            const res = await emailjs.send(
+                import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+                import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+                {
+                    from_name: "Portfolio",
+                    to_name: "Jahid Hossan",
+                    message: massage,
+                    name: name,
+                    email: email,
+                }, import.meta.env.EMAIL_JS_API_PUBLIC_KEY
+            );
+
+            console.log(res.status);
+
+            if (res.status === 200) {
+                console.log("hello")
+                e.target.reset();
+                toast.success("Email sent successfully")
+
+            }
+
+        } catch (err) {
+            console.error(err);
+        }
     };
+
 
 
     return (

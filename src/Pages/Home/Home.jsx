@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import About from "./About";
 import Banner from "./Banner";
 import Contact from "./Contact";
@@ -39,6 +40,7 @@ const Home = () => {
                     <Contact />
                 </div>
             </div>
+            <Toaster />
         </>
     );
 };
