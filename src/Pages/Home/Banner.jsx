@@ -1,19 +1,19 @@
 import { TypeAnimation } from "react-type-animation";
 import img from "../../assets/portfulio.png"
 import { TbDownload } from "react-icons/tb";
-import resume from '../../../public/Resume of Jahid Hossan (frontend) (1).pdf'
+import resume from '../../assets/Resume-of-Jahid-Hossan(MERN).pdf'
 
 
 const Banner = () => {
 
 
-    const encodedFilename = encodeURIComponent("Resume-of-Jahid-Hossan.pdf");
+    const encodedFilename = encodeURIComponent("Resume-of-Jahid-Hossan(MERN).pdf");
 
     return (
         <div className="  flex flex-col lg:flex-row  justify-center items-center">
             <div className="text-white lg:w-1/2  flex justify-center">
                 <div className="mt-4">
-                    <h2 className="text-3xl lg:text-6xl font-bold font-carmo">Hello! I'm</h2>
+                    <h2 className="text-3xl lg:text-6xl font-bold font-carmo">Hello! I&apos;m</h2>
                     <h1 className="text-5xl lg:text-8xl font-bold font-carmo lg:mt-7">Jahid Hossan</h1>
                     <p className="text-gray-400 text-lg mt-4 lg:mt-9">Front-end Web Developer</p>
                     <p className="text-gray-400 text-lg ">
@@ -22,15 +22,22 @@ const Banner = () => {
 
                                 // Same substring at the start will only be typed once, initially
                                 ' JavaScript',
-                                1000,
+                                1300,
+                                ' Typescript',
+                                1300,
                                 ' React',
-                                1000,
+                                1300,
                                 ' Mongodb',
-                                1000,
+                                1300,
                                 ' HTML',
-                                1000,
+                                1300,
                                 ' CSS',
-                                1000,
+                                1300,
+                                ' NextJS',
+                                1300,
+                                ' Mongoose',
+                                1300,
+
                             ]}
                             speed={50}
                             // style={{

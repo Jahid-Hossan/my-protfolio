@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 const Contact = () => {
     useEffect(() => emailjs.init(import.meta.env.VITE_EMAIL_JS_API_PUBLIC_KEY), []);
 
-    console.log(import.meta.env.VITE_EMAIL_JS_SERVICE_ID);
+    // console.log(import.meta.env.VITE_EMAIL_JS_SERVICE_ID);
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();

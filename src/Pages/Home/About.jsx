@@ -2,7 +2,7 @@ import Heading from "../../Component/Heading";
 
 const About = () => {
     return (
-        <div className="">
+        <div className="px-20">
             <div className="pt-8">
                 <Heading heading={"About"} ></Heading>
             </div>

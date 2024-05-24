@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
     return (
-        <div>
+        <div className="px-20">
             <div className="pt-8">
                 <Heading heading={"Projects"} ></Heading>
             </div>
