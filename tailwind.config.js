@@ -9,7 +9,11 @@ export default {
       'carmo': 'Cormorant Garamond',
       'styledFont': 'Lobster'
     },
-    extend: {},
+    extend: {
+      colors:{
+        "myGrean":"[#27AE60]"
+      }
+    },
 
   },
   // eslint-disable-next-line no-undef

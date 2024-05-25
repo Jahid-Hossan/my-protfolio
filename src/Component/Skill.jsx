@@ -1,10 +1,18 @@
+// eslint-disable-next-line react/prop-types
 const Skill = ({ title, value }) => {
-    return (
-        <div className="bg-[#3f4255] p-4 max-w-fit rounded-sm ">
-            <label className="text-white block">{title}</label>
-            <progress className="progress progress-success w-60 bg-[#181920]" value={value} max="100"></progress>
-        </div>
-    );
+  return (
+    <div className=" w-full ">
+      <label className="text-white  flex justify-between">
+        <span>{title}</span> <span>{value}%</span>
+      </label>
+      <div className="w-full h-2 rounded-full bg-black ">
+        <div
+          className={`h-2 rounded-full bg-[#27AE60] `}
+          style={{ width: `${value}%` }}
+        ></div>
+      </div>
+    </div>
+  );
 };
 
 export default Skill;
