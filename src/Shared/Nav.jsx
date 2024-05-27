@@ -84,26 +84,25 @@ const Nav = () => {
                   <div className=" mx-auto  p-4">
                     <form
                       onSubmit={handleFormSubmit}
-                      className="space-y-12 text-gray-300"
+                      className="space-y-6 text-gray-300"
                     >
-                      <div className="">
-                        <div className="w-full">
-                          <input
-                            placeholder="name"
-                            name="name"
-                            type="text"
-                            className="w-full  border-b-[2px] py-3 bg-[#2a2c39] outline-none "
-                          />
-                        </div>
-                        <div className="w-full">
-                          <input
-                            placeholder="email"
-                            name="email"
-                            type="email"
-                            className="w-full bg-[#2a2c39] border-b-[2px] py-3 outline-none "
-                          />
-                        </div>
+                      <div className="w-full">
+                        <input
+                          placeholder="name"
+                          name="name"
+                          type="text"
+                          className="w-full  border-[2px] p-3 bg-[#2a2c39] outline-none "
+                        />
                       </div>
+                      <div className="w-full">
+                        <input
+                          placeholder="email"
+                          name="email"
+                          type="email"
+                          className="w-full bg-[#2a2c39] border-[2px] p-3 outline-none "
+                        />
+                      </div>
+
                       <div>
                         <textarea
                           placeholder="message"
@@ -112,7 +111,7 @@ const Nav = () => {
                           className="w-full bg-[#2a2c39] border-[2px] p-3 rounded "
                         ></textarea>
                       </div>
-                      <div className="flex justify-center items-center lg:pb-16">
+                      <div className="flex justify-center items-center ">
                         <button
                           type="submit"
                           className="px-4    text-[#27AE60] hover:bg-[#333648]  border-[#333648]   hover:duration-500 border-[2px] rounded-full py-4 "
